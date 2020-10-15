@@ -3,11 +3,18 @@ package SnackBar;
 public class VendingMachine
 {
     // Fields
-    private int maxId;
+    private static int maxId = 0;
     private int id;
     private String name;
 
-    // Methods
+    // Constructor
+    public VendingMachine(String name)
+    {
+        maxId++;
+        id = maxId;
+
+        this.name = name;
+    }
 
     // Getter
     public int getId()

@@ -10,8 +10,6 @@ public class Snack
     private double cost;
     private int vendingMachineId;
 
-    // Methods
-
     // Constructor
     public Snack(String name, int quantity, double cost, int vendingMachineId)
     {
@@ -50,6 +48,10 @@ public class Snack
     public void setName(String name)
     {
         this.name = name;
+    }
+    public void setQuantity(int quantity)
+    {
+        this.quantity = quantity;
     }
     public void setCost(double cost)
     {

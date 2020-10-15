@@ -3,12 +3,20 @@ package SnackBar;
 public class Customer
 {
     // Fields
-    private int maxId;
+    private static int maxId = 0;
     private int id;
     private String name;
     private double cashOnHand;
 
-    // Methods
+    // Constructor
+    public Customer(String name, double cashOnHand)
+    {
+        maxId++;
+        id = maxId;
+
+        this.name = name;
+        this.cashOnHand = cashOnHand;
+    }
 
     // Getter
     public int getId()
@@ -28,5 +36,9 @@ public class Customer
     public void setName(String name)
     {
         this.name = name;
+    }
+    public void setCashOnHand(double cashOnHand)
+    {
+        this.cashOnHand = cashOnHand;
     }
 }
